@@ -6,10 +6,15 @@ import {Card} from "../component/card.jsx"
 export const Home = () => {
 	return (
 	<div className="container">
+		<h1 className="characters">Characters</h1>
 		<div className="row">
-			<div className="col-3">
+			{/* create component for carrusell cards for all categories */}
 				<Card />
-			</div>
+				<Card />
+				<Card />
+				<Card />
+				
+			
 		</div>
 	</div>
 	)

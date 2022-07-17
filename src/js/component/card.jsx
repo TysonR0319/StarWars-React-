@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Card = () => {
   return (
-    <div className="container">
+    <div className="col-3">
     <div className="card">
   <img src="..." className="card-img-top" alt="..."/>
   <div className="card-body">
