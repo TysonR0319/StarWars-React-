@@ -22,16 +22,33 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-						<Route exact path="/">
+						{/*Nav-bar links */}
+						<Route exact path="/"> 
+							{/*Home*/}
 							<Home />
 						</Route>
-						<Route exact path="/people/:theid">
+						{/*Character links */}
+						<Route exact path="/all-characters">
+							{/*All character view*/}
+						</Route>
+						<Route exact path="/character/:theid">
+							{/* Character card view */}
 							<People />
 						</Route>
+						{/*Planet links */}
+						<Route exact path="/all-planets">
+							{/*All planets view */}
+						</Route>
 						<Route exact path="/planets/:theid">
+							{/* Planet card view */}
 							<Planets />
 						</Route>
+						{/*Vehicles links */}
+						<Route exact path="/all-vehicles">
+							{/*All vehicles view */}
+						</Route>
 						<Route exact path="/vehicles/:theid">
+							{/* Vehicles card view */}
 							<Vehicles />
 						</Route>
 					</Switch>

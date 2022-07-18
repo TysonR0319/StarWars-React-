@@ -1,1 +1,99 @@
+:root{
+    --yellow-color:#FFE81F;
+    --black-color : #000000;
+    --blue-color : #0006C1;
+    --gray-color : #898989;
 
+    
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/4a/a9/9b/4aa99b6ad2d2cbc7cb04a41571885a8f.jpg");
+}
+h1{
+    color: var(--yellow-color);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 6%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.glow{
+  color: #fff;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+    color: white;
+    text-shadow: 0 0 5px #ffe91f86, 0 0 10px #ffe91fc6, 0 0 20px #FFE81F, 0 0 25px #FFE81F, 0 0 30px #FFE81F, 0 0 35px #FFE81F, 0 0 40px #FFE81F;
+    }
+    
+    to {
+    color: white;
+    text-shadow: 0 0 10px #0006c161, 0 0 20px #0006C1, 0 0 25px #0006C1, 0 0 30px #0006C1, 0 0 35px #0006C1, 0 0 40px #0006C1, 0 0 50px #0006C1;
+    }
+}
+
+.h1-bold{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 6%;
+
+}
+.h2-bold{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 7%;
+}
+.h3-regular{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3%;
+}
+.body-text{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 6%;
+}
+.sub-heading{
+     font-size: 24px;
+     font-weight: 600;
+     letter-spacing: 3%;
+}
+
+/* Card Styles */ 
+
+/* Carousel styles */
+.carousel{
+    overflow:auto;
+    width: ;
+    height: 460px;
+    flex-wrap: nowrap;
+}
+/* Nav-Bar Styles */
+.navbar-btn{
+    background-color: var(--yellow-color);
+}
+.dropdown-menu{
+min-width: 130px !important;
+background-color: black;
+border: 1px var(--yellow-color) solid;
+text-align: center;
+}
+.favorite-link{
+    text-decoration: none;
+    color: var(--yellow-color);
+}
+.favorite-link:hover{
+    color: var(--yellow-color);
+    text-shadow: 0 0 3px #ffe91f86, 0 0 5px #ffe91fc6, 0 0 10px #FFE81F, 0 0 13px #FFE81F, 0 0 15px #FFE81F, 0 0 20px #FFE81F, 0 0 23px #FFE81F;
+    
+}
+.nav-li{
+    color: var(--yellow-color);
+}
+.nav-li:hover{
+    color: var(--yellow-color);
+    text-shadow: 0 0 3px #ffe91f86, 0 0 5px #ffe91fc6, 0 0 10px #FFE81F, 0 0 13px #FFE81F, 0 0 15px #FFE81F, 0 0 20px #FFE81F, 0 0 23px #FFE81F;
+}

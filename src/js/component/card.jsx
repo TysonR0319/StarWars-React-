@@ -4,7 +4,7 @@ export const Card = () => {
   return (
     <div className="col-3">
     <div className="card">
-  <img src="..." className="card-img-top" alt="..."/>
+  <img src="https://starwars-visualguide.com/assets/img/planets/2.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">""</h5>
     <p className="card-text">""</p>
