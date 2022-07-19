@@ -2,14 +2,16 @@ import React from 'react'
 
 export const Card = () => {
   return (
-    <div className="col-3">
+    <div className="col-3 card-container">
     <div className="card">
   <img src="https://starwars-visualguide.com/assets/img/planets/2.jpg" className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">""</h5>
-    <p className="card-text">""</p>
+    <h5 className="card-title">Dummy Text</h5>
+    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, doloremque.</p>
+    <div className="card-end">
     <a href="#" className="btn btn-primary">Learn more about!</a>
     <a href="#" className="btn btn-primary"><i className="bi bi-heart-fill"></i></a>
+    </div>
   </div>
 </div>
 </div>
