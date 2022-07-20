@@ -4,14 +4,15 @@ import "../../styles/home.css";
 import {Carousel} from "../component/carousel.jsx"
 
 export const Home = () => {
+	
 	return (
 	<div className="container">
 		<h1 className="characters glow">Characters</h1>
-			<Carousel />
+			<Carousel routePath="characters"/>
 		<h1 className="planets glow">Planets</h1>
-			<Carousel />
+			<Carousel routePath="planets"/>
 		<h1 className="vehicles glow">Vehicles</h1>
-			<Carousel />
+			<Carousel routePath="vehicles"/>
 		
 	</div>
 	)

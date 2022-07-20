@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
-
+import { SingleView } from "./component/singleView.jsx";
 import { Home } from "./views/home";
 import injectContext from "./store/appContext";
 
@@ -31,9 +31,9 @@ const Layout = () => {
 						<Route exact path="/all-characters">
 							{/*All character view*/}
 						</Route>
-						<Route exact path="/character/:theid">
+						<Route exact path="/characters/:theid">
 							{/* Character card view */}
-							<People />
+							<SingleView category="people"/>
 						</Route>
 						{/*Planet links */}
 						<Route exact path="/all-planets">
@@ -41,7 +41,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/planets/:theid">
 							{/* Planet card view */}
-							<Planets />
+							<SingleView category="planets"/>
 						</Route>
 						{/*Vehicles links */}
 						<Route exact path="/all-vehicles">
@@ -49,7 +49,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/vehicles/:theid">
 							{/* Vehicles card view */}
-							<Vehicles />
+							<SingleView category="vehicles"/>
 						</Route>
 					</Switch>
 					<Footer />
