@@ -6,7 +6,7 @@ export const Carousel = (props) => {
   const {store, actions} = useContext(Context)
   useEffect(() => {
     
-    if (props.routePath === "characters"){
+    if (props.routePath === "people"){
       actions.loadCharacterData()
     } else if (props.routePath === "planets"){
       actions.loadPlanetData()
@@ -15,7 +15,7 @@ export const Carousel = (props) => {
     }
   },[])
   let cardData = null
-  if (props.routePath === "characters"){
+  if (props.routePath === "people"){
     cardData = store.characterData
   } else if (props.routePath === "planets"){
     cardData = store.planetData
@@ -27,7 +27,7 @@ export const Carousel = (props) => {
         <div className="row carousel">
           {cardData && cardData.results.map((result) => {
             return(
-              <Card routePath={props.routePath} name={result.name} uid={result.uid} />
+              <Card key={result.uid} routePath={props.routePath} name={result.name} uid={result.uid} />
             )
           })}
         </div>

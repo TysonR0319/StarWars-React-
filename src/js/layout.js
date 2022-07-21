@@ -31,7 +31,7 @@ const Layout = () => {
 						<Route exact path="/all-characters">
 							{/*All character view*/}
 						</Route>
-						<Route exact path="/characters/:theid">
+						<Route exact path="/people/:id">
 							{/* Character card view */}
 							<SingleView category="people"/>
 						</Route>
@@ -39,7 +39,7 @@ const Layout = () => {
 						<Route exact path="/all-planets">
 							{/*All planets view */}
 						</Route>
-						<Route exact path="/planets/:theid">
+						<Route exact path="/planets/:id">
 							{/* Planet card view */}
 							<SingleView category="planets"/>
 						</Route>
@@ -47,7 +47,7 @@ const Layout = () => {
 						<Route exact path="/all-vehicles">
 							{/*All vehicles view */}
 						</Route>
-						<Route exact path="/vehicles/:theid">
+						<Route exact path="/vehicles/:id">
 							{/* Vehicles card view */}
 							<SingleView category="vehicles"/>
 						</Route>
