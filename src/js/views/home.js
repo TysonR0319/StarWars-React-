@@ -11,7 +11,8 @@ export const Home = () => {
 			<Carousel routePath="people"/>
 		<h1 className="planets glow">Planets</h1>
 			<Carousel routePath="planets"/>
-		
+		<h1 className="vehicles glow">Vehicles</h1>
+			<Carousel routePath="vehicles" />
 		
 	</div>
 	)
