@@ -57,6 +57,7 @@ h1{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 6%;
+    color: var(--gray-color);
 }
 .sub-heading{
      font-size: 24px;

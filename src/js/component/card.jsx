@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { Context } from '../store/appContext'
 
 export const Card = (props) => {
+  
+  const [favorite, setFavorite] = useState([])
+ 
+//   const addToFavorite = id => {
+//     if (!favorite.includes(id)) setFavorite(favorite.concat(id));
+    
+//   };
+// console.log(favorite) Tried adding favorite feature
+
+
+
+
+
+
   return (
     <div className="col-3 card-container">
     <div className="card">
@@ -15,7 +31,7 @@ export const Card = (props) => {
     </Link>
 
 
-    <a href="#" className="btn icon-btn border border-warning"><i className="bi bi-heart-fill"></i></a>
+    <button className="btn icon-btn border border-warning"><i className="bi bi-heart-fill"></i></button>
     </div>
   </div>
 </div>

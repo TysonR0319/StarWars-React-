@@ -3,7 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			characterData: null,
 			planetData: null,
-			vehicleData: null
+			vehicleData: null,
+			favorites: null
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
