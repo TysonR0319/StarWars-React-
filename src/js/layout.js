@@ -49,7 +49,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/vehicles/:id">
 							{/* Vehicles card view */}
-							<SingleView category="vehicles"/>
+							<SingleView category="starships"/>
 						</Route>
 					</Switch>
 					<Footer />
